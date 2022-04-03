@@ -1,19 +1,25 @@
 import Section from "./section";
 import Card from "./card";
-import { getStrapiURL } from "../lib/api.js";
 import CVButton from "./cvButton";
+import NextImage from "next/image";
+import { getStrapiMedia } from "../lib/media";
 
 
 const SectionContainer = ({ children, activeSection, homepage, articles, projects }) => {
     switch (activeSection) {
         case "home":
+            const { alternativeText, width, height } = homepage.attributes.profilePicture.data.attributes;
             return (
                 <Section name="sec1" extraClasses="header" id="home" isActive>
                     <div className="header-content">
                         <div className="left-header">
                             <div className="h-shape"></div>
                             <div className="image">
-                                <img src={getStrapiURL("/uploads/IMG_3728_069e827c48.JPG?updated_at=2022-03-31T21:32:04.064Z")} alt="" />
+                                <NextImage src={getStrapiMedia(homepage.attributes.profilePicture)}
+                                           layout="responsive"
+                                           width={width}
+                                           height={height}
+                                           objectFit="contain" />
                             </div>
                         </div>
                         <div className="right-header">

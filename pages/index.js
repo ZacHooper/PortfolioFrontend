@@ -37,6 +37,7 @@ export async function getStaticProps() {
       populate: {
         hero: "*",
         seo: { populate: "*" },
+        profilePicture: {populate: "*"}
       },
     }),
   ]);
