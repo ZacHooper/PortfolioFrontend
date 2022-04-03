@@ -33,7 +33,7 @@ const Article = ({ article, categories }) => {
       </div>
       <div className="uk-section blog-container">
         <div className="uk-container uk-container-small">
-          <ReactMarkdown children={article.attributes.content} />
+          <ReactMarkdown>{project.attributes.content}</ReactMarkdown>
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
             <div>

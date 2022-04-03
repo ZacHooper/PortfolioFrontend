@@ -34,7 +34,7 @@ const Project = ({ project }) => {
       </div>
       <div className="uk-section blog-container">
         <div className="uk-container uk-container-small">
-          <ReactMarkdown children={project.attributes.content} />
+          <ReactMarkdown>{project.attributes.content}</ReactMarkdown>
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
             <div className="uk-width-expand">
