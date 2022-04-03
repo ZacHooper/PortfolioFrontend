@@ -20,8 +20,8 @@ const Home = ({ articles, categories, homepage, projects }) => {
                           projects={projects}/>        
         <Controls activeSection={activeSection} setActiveSection={setActiveSection}/>
 
-      <div class="theme-btn">
-          <i class="fas fa-adjust"></i>
+      <div className="theme-btn">
+          <i className="fas fa-adjust"></i>
       </div>
     </Layout>
   );

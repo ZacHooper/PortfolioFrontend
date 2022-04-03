@@ -19,6 +19,8 @@ const Article = ({ article, categories }) => {
 
   return (
     <Layout categories={categories.data}>
+      <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css" /> 
       <Seo seo={seo} />
       <div
         id="banner"
@@ -29,7 +31,7 @@ const Article = ({ article, categories }) => {
       >
         <h1>{article.attributes.title}</h1>
       </div>
-      <div className="uk-section">
+      <div className="uk-section blog-container">
         <div className="uk-container uk-container-small">
           <ReactMarkdown children={article.attributes.content} />
           <hr className="uk-divider-small" />

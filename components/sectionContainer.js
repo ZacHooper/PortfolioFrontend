@@ -9,7 +9,7 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
         case "home":
             return (
                 <Section name="sec1" extraClasses="header" id="home" isActive>
-                    <div class="header-content">
+                    <div className="header-content">
                         <div className="left-header">
                             <div className="h-shape"></div>
                             <div className="image">
@@ -31,11 +31,11 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
         case "about":
             return (
                 <Section name="sec2" extraClasses="about" id="about" isActive>
-                    <div class="main-title">
-                        <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+                    <div className="main-title">
+                        <h2>About <span>me</span><span className="bg-text">my stats</span></h2>
                     </div>
-                    <div class="about-container">
-                        <div class="left-about">
+                    <div className="about-container">
+                        <div className="left-about">
                             <h4>Information About me</h4>
                             <p>
                             I am a Data Scientist with strong analytical and statistical skills. 
@@ -43,149 +43,149 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
                             </p>
                             <CVButton />
                         </div>
-                        <div class="right-about">
-                            <div class="about-item">
-                                <div class="abt-text">
-                                    <p class="large-text">3+</p>
-                                    <p class="small-text">Years of<br /> experience</p>
+                        <div className="right-about">
+                            <div className="about-item">
+                                <div className="abt-text">
+                                    <p className="large-text">3+</p>
+                                    <p className="small-text">Years of<br /> experience</p>
                                 </div>
                             </div>
-                            <div class="about-item">
-                                <div class="abt-text">
-                                    <p class="large-text">5+</p>
-                                    <p class="small-text">Programming <br /> languages</p>
+                            <div className="about-item">
+                                <div className="abt-text">
+                                    <p className="large-text">5+</p>
+                                    <p className="small-text">Programming <br /> languages</p>
                                 </div>
                             </div>
-                            <div class="about-item">
-                                <div class="abt-text">
-                                    <p class="large-text">Efficient</p>
-                                    <p class="small-text">Data <br /> analysis</p>
+                            <div className="about-item">
+                                <div className="abt-text">
+                                    <p className="large-text">Efficient</p>
+                                    <p className="small-text">Data <br /> analysis</p>
                                 </div>
                             </div>
-                            <div class="about-item">
-                                <div class="abt-text">
-                                    <p class="large-text">Detailed</p>
-                                    <p class="small-text">Dataset <br /> management</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-stats">
-                        <h4 class="stat-title">My Skills</h4>
-                        <div class="progress-bars">
-                            <div class="progress-bar">
-                                <p class="prog-title">Python</p>
-                                <div class="progress-con">
-                                    <p class="prog-text">90%</p>
-                                    <div class="progress">
-                                        <span class="python"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">R</p>
-                                <div class="progress-con">
-                                    <p class="prog-text">75%</p>
-                                    <div class="progress">
-                                        <span class="r"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">javascript</p>
-                                <div class="progress-con">
-                                    <p class="prog-text">75%</p>
-                                    <div class="progress">
-                                        <span class="js"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">SQL</p>
-                                <div class="progress-con">
-                                    <p class="prog-text">75%</p>
-                                    <div class="progress">
-                                        <span class="sql"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">HTML/CSS</p>
-                                <div class="progress-con">
-                                    <p class="prog-text">60%</p>
-                                    <div class="progress">
-                                        <span class="htmlcss"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">AWS</p>
-                                <div class="progress-con">
-                                    <p class="prog-text">60%</p>
-                                    <div class="progress">
-                                        <span class="aws"></span>
-                                    </div>
+                            <div className="about-item">
+                                <div className="abt-text">
+                                    <p className="large-text">Detailed</p>
+                                    <p className="small-text">Dataset <br /> management</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h4 class="stat-title">My Timeline</h4>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="tl-icon">
-                                <i class="fas fa-briefcase"></i>
+                    <div className="about-stats">
+                        <h4 className="stat-title">My Skills</h4>
+                        <div className="progress-bars">
+                            <div className="progress-bar">
+                                <p className="prog-title">Python</p>
+                                <div className="progress-con">
+                                    <p className="prog-text">90%</p>
+                                    <div className="progress">
+                                        <span className="python"></span>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="tl-duration">2021</p>
+                            <div className="progress-bar">
+                                <p className="prog-title">R</p>
+                                <div className="progress-con">
+                                    <p className="prog-text">75%</p>
+                                    <div className="progress">
+                                        <span className="r"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="progress-bar">
+                                <p className="prog-title">javascript</p>
+                                <div className="progress-con">
+                                    <p className="prog-text">75%</p>
+                                    <div className="progress">
+                                        <span className="js"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="progress-bar">
+                                <p className="prog-title">SQL</p>
+                                <div className="progress-con">
+                                    <p className="prog-text">75%</p>
+                                    <div className="progress">
+                                        <span className="sql"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="progress-bar">
+                                <p className="prog-title">HTML/CSS</p>
+                                <div className="progress-con">
+                                    <p className="prog-text">60%</p>
+                                    <div className="progress">
+                                        <span className="htmlcss"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="progress-bar">
+                                <p className="prog-title">AWS</p>
+                                <div className="progress-con">
+                                    <p className="prog-text">60%</p>
+                                    <div className="progress">
+                                        <span className="aws"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 className="stat-title">My Timeline</h4>
+                    <div className="timeline">
+                        <div className="timeline-item">
+                            <div className="tl-icon">
+                                <i className="fas fa-briefcase"></i>
+                            </div>
+                            <p className="tl-duration">2021</p>
                             <h5>Graduate Certificate of Data Science<span> - RMIT</span></h5>
                             <p>
                                 Data modelling, applied analytics, data visualising, data wrangling
                             </p>
                         </div>
-                        <div class="timeline-item">
-                            <div class="tl-icon">
-                                <i class="fas fa-briefcase"></i>
+                        <div className="timeline-item">
+                            <div className="tl-icon">
+                                <i className="fas fa-briefcase"></i>
                             </div>
-                            <p class="tl-duration">2021</p>
+                            <p className="tl-duration">2021</p>
                             <h5>Fundamentals of the Databricks Lakehouse Platform<span> - Databricks</span></h5>
                             <p>
                                 Use cases and application of the Databricks Lakehouse for data teams
                             </p>
                         </div>
-                        <div class="timeline-item">
-                            <div class="tl-icon">
-                                <i class="fas fa-briefcase"></i>
+                        <div className="timeline-item">
+                            <div className="tl-icon">
+                                <i className="fas fa-briefcase"></i>
                             </div>
-                            <p class="tl-duration">2019 - 2021</p>
+                            <p className="tl-duration">2019 - 2021</p>
                             <h5>Cloud Application Specialist<span> - Cimar</span></h5>
                             <p>
                                 Data analysis, technical implementation, bespoke integrations, customer support, security management
                             </p>
                         </div>
-                        <div class="timeline-item">
-                            <div class="tl-icon">
-                                <i class="fas fa-briefcase"></i>
+                        <div className="timeline-item">
+                            <div className="tl-icon">
+                                <i className="fas fa-briefcase"></i>
                             </div>
-                            <p class="tl-duration">2018 - 2019</p>
+                            <p className="tl-duration">2018 - 2019</p>
                             <h5>Temp Analyst<span> - Morgan Spencer</span></h5>
                             <p>
                                 Data wrangling, Salesforce reports, customer support
                             </p>
                         </div>
-                        <div class="timeline-item">
-                            <div class="tl-icon">
-                                <i class="fas fa-briefcase"></i>
+                        <div className="timeline-item">
+                            <div className="tl-icon">
+                                <i className="fas fa-briefcase"></i>
                             </div>
-                            <p class="tl-duration">2014 - 2017</p>
+                            <p className="tl-duration">2014 - 2017</p>
                             <h5>Bachelor of Arts (Music Industry)<span> - RMIT</span></h5>
                             <p>
                                 Music production, digital marketing, industry theory
                             </p>
                         </div>
-                        <div class="timeline-item">
-                            <div class="tl-icon">
-                                <i class="fas fa-briefcase"></i>
+                        <div className="timeline-item">
+                            <div className="tl-icon">
+                                <i className="fas fa-briefcase"></i>
                             </div>
-                            <p class="tl-duration">2015 - 2016</p>
+                            <p className="tl-duration">2015 - 2016</p>
                             <h5>Diploma of Information Technology<span> - RMIT</span></h5>
                             <p>
                             Database management, networking, cloud applications, app development, web development
@@ -198,13 +198,13 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
         case "portfolio":
             return (
                 <Section name="sec3" id="portfolio" isActive>
-                    <div class="main-title">
-                        <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+                    <div className="main-title">
+                        <h2>My <span>Portfolio</span><span className="bg-text">My Work</span></h2>
                     </div>
-                    <p class="port-text">
+                    <p className="port-text">
                         Here is some of my work that I've done in various programming languages.
                     </p>
-                    <div class="blogs">
+                    <div className="blogs">
                         {projects.map(article => {
                             return (<Card
                                 article={article}
@@ -219,11 +219,11 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
         case "blogs":
             return (
                 <Section name="sec4" id="blogs" isActive>
-                    <div class="blogs-content">
-                        <div class="main-title">
-                            <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                    <div className="blogs-content">
+                        <div className="main-title">
+                            <h2>My <span>Blogs</span><span className="bg-text">My Blogs</span></h2>
                         </div>
-                        <div class="blogs">
+                        <div className="blogs">
                             {articles.map(article => {
                                 return (<Card
                                     article={article}
@@ -239,45 +239,45 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
         case "contact":
             return (
                 <Section name="sec5" extraClasses="contact" id="contact" isActive>
-                    <div class="contact-container">
-                        <div class="main-title">
-                            <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                    <div className="contact-container">
+                        <div className="main-title">
+                            <h2>Contact <span>Me</span><span className="bg-text">Contact</span></h2>
                         </div>
-                        <div class="contact-content-con">
-                            <div class="left-contact">
+                        <div className="contact-content-con">
+                            <div className="left-contact">
                                 <h4>Contact me here</h4>
                                 <p>
                                     Look forward to hearing and working with you in the future.
                                 </p>
-                                <div class="contact-info">
-                                    <div class="contact-item">
-                                        <div class="icon">
-                                            <i class="fas fa-map-marker-alt"></i>
+                                <div className="contact-info">
+                                    <div className="contact-item">
+                                        <div className="icon">
+                                            <i className="fas fa-map-marker-alt"></i>
                                             <span>Location</span>
                                         </div>
                                         <p>WFH, Australia</p>
                                     </div>
-                                    <div class="contact-item">
-                                        <div class="icon">
-                                            <i class="fas fa-envelope"></i>
+                                    <div className="contact-item">
+                                        <div className="icon">
+                                            <i className="fas fa-envelope"></i>
                                             <span>Email</span>
                                         </div>
                                         <p>
                                             <span>zac.g.hooper@gmail.com</span>
                                         </p>
                                     </div>
-                                    <div class="contact-item">
-                                        <div class="icon">
-                                            <i class="fas fa-user-graduate"></i>
+                                    <div className="contact-item">
+                                        <div className="icon">
+                                            <i className="fas fa-user-graduate"></i>
                                             <span>Education</span>
                                         </div>
                                         <p>
                                             <span>RMIT, Melbourne</span>
                                         </p>
                                     </div>
-                                    <div class="contact-item">
-                                        <div class="icon">
-                                            <i class="fas fa-phone"></i>
+                                    <div className="contact-item">
+                                        <div className="icon">
+                                            <i className="fas fa-phone"></i>
                                             <span>Mobile Number</span>
                                         </div>
                                         <p>
@@ -287,19 +287,19 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
                                     <br />
                                     <CVButton />
                                 </div>
-                                <div class="contact-icons">
-                                    <div class="contact-icon">
-                                        <a href="https://www.linkedin.com/in/zac-hooper-85960411a/" target="_blank">
-                                            <i class="fab fa-linkedin"></i>
+                                <div className="contact-icons">
+                                    <div className="contact-icon">
+                                        <a href="https://www.linkedin.com/in/zac-hooper-85960411a/" target="_blank" rel="noreferrer">
+                                            <i className="fab fa-linkedin"></i>
                                         </a>
-                                        <a href="https://twitter.com/Hoo0oper" target="_blank">
-                                            <i class="fab fa-twitter"></i>
+                                        <a href="https://twitter.com/Hoo0oper" target="_blank" rel="noreferrer">
+                                            <i className="fab fa-twitter"></i>
                                         </a>
-                                        <a href="https://github.com/ZacHooper" target="_blank">
-                                            <i class="fab fa-github"></i>
+                                        <a href="https://github.com/ZacHooper" target="_blank" rel="noreferrer">
+                                            <i className="fab fa-github"></i>
                                         </a>
-                                        <a href="mailto:zac.g.hooper@gmail.com" target="_blank">
-                                            <i class="fas fa-envelope"></i>
+                                        <a href="mailto:zac.g.hooper@gmail.com" target="_blank" rel="noreferrer">
+                                            <i className="fas fa-envelope"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -312,7 +312,7 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
         default:
             return (
                 <Section name="sec1" extraClasses="header" id="home" isActive>
-                    <div class="header-content">
+                    <div className="header-content">
                         <div className="left-header">
                             <div className="h-shape"></div>
                             <div className="image">
@@ -320,19 +320,19 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
                             </div>
                         </div>
                         <div className="right-header">
-                            <h1 class="name">
-                                Hi, I'm <span>Nguyễn Văn Tài.</span>
+                            <h1 className="name">
+                                Hi, I&apos;m <span>Nguyễn Văn Tài.</span>
                                 A Web Developer.
                             </h1>
                             <p>
-                                I'm a Web Developer, I love to create beautiful and functional websites.
+                                I&apos;m a Web Developer, I love to create beautiful and functional websites.
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, libero?
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis sed aut!
                             </p>
-                            <div class="btn-con">
-                                <a href="" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                            <div className="btn-con">
+                                <a href="" className="main-btn">
+                                    <span className="btn-text">Download CV</span>
+                                    <span className="btn-icon"><i className="fas fa-download"></i></span>
                                 </a>
                             </div>
                         </div>
