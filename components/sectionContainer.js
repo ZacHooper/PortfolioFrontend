@@ -18,7 +18,7 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
                         </div>
                         <div className="right-header">
                             <h1 className="name">
-                                Hi, I'm <span>Zac Hooper.</span><br />
+                                Hi, I&apos;m <span>Zac Hooper.</span><br />
                                 A Data Scientist.
                             </h1>
                             <p>{homepage.attributes.description}</p>
@@ -202,7 +202,7 @@ const SectionContainer = ({ children, activeSection, homepage, articles, project
                         <h2>My <span>Portfolio</span><span className="bg-text">My Work</span></h2>
                     </div>
                     <p className="port-text">
-                        Here is some of my work that I've done in various programming languages.
+                        Here is some of my work that I&apos;ve done in various programming languages.
                     </p>
                     <div className="blogs">
                         {projects.map(article => {
